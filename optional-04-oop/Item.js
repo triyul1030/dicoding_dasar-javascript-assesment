@@ -9,7 +9,30 @@
  *   ```
  */
 
-class Item {}
+class Item {
+  constructor(id, name, quantity, price) {
+    this.id = id;
+    this.name = name;
+    this.quantity = quantity;
+    this.price = price;
+  }
+
+  updateDetails(name, quantity, price) {
+    if (name !== undefined) {
+      this.name = name;
+    }
+    if (quantity !== undefined) {
+      this.quantity = quantity;
+    }
+    if (price !== undefined) {
+      this.price = price;
+    }
+  }
+
+  displayDetails() {
+    return `ID: ${this.id}, Name: ${this.name}, Quantity: ${this.quantity}, Price: ${this.price}`;
+  }
+}
 
 // Jangan hapus kode di bawah ini!
 export default Item;
