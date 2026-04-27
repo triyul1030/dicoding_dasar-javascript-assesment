@@ -1,4 +1,4 @@
-// yulia1030
+// triyul1030
 
 /*
 Goal tahun ini:
